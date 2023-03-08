@@ -37,6 +37,7 @@ namespace Abueva_Perceptron
 
             //application of perceptron codes
             perceptron = new Perceptron(numInputs: 2);
+
             double[][] inputs = new double[][]
             {
                 new double[] { 0, 0 },
@@ -44,8 +45,9 @@ namespace Abueva_Perceptron
                 new double[] { 1, 0 },
                 new double[] { 1, 1 }
             };
+
             //set target
-            int[] targets = new int[] { 0, 1, 1, 0 };
+            int[] targets = new int[] { 1, 0, 0, 0 };
 
             //train perceptron
             perceptron.Train(inputs, targets, numOfEpochs);
@@ -55,6 +57,19 @@ namespace Abueva_Perceptron
 
             //show output
             showw.Text = output;
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            txt1.Text = "";
+            txt2.Text = "";
+            txt3.Text = "";
+            showw.Text = "";
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

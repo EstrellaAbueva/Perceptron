@@ -38,6 +38,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.showw = new System.Windows.Forms.Label();
             this.sol = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,12 +65,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(60, 44);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(45, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 16);
+            this.label3.Size = new System.Drawing.Size(313, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Calculate XOR Gate using Perceptron";
+            this.label3.Text = "Calculate NOR Gate using Perceptron";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -133,11 +135,22 @@
             this.sol.UseVisualStyleBackColor = true;
             this.sol.Click += new System.EventHandler(this.sol_Click);
             // 
+            // clear
+            // 
+            this.clear.Location = new System.Drawing.Point(110, 252);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(117, 43);
+            this.clear.TabIndex = 10;
+            this.clear.Text = "Clear";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 321);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.sol);
             this.Controls.Add(this.showw);
             this.Controls.Add(this.label5);
@@ -168,6 +181,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label showw;
         private System.Windows.Forms.Button sol;
+        private System.Windows.Forms.Button clear;
     }
 }
 
