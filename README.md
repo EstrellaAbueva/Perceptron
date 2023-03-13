@@ -1,7 +1,6 @@
 # Perceptron
 
-![image](https://user-images.githubusercontent.com/111742763/223709818-144646a6-a152-47d5-a912-b2f7670f1a5c.png)
-
+![image](https://user-images.githubusercontent.com/111742763/224600258-72584b16-4ab9-4723-a5ff-d9b2564a5561.png)
 Sample Result:
 
 ![image](https://user-images.githubusercontent.com/111742763/223709466-fafca95a-c766-49ac-ba7e-7b673ab393fc.png)
